@@ -27,3 +27,23 @@
   
 //   // Call the function
 //   fullName();
+
+// // Question2
+// var firstName = "Thotyelwa";
+// var lastName = "Mpongwana";
+// var age = 22;
+// var subjects = ["Math", "Geograph", "English"];
+// var address = {
+//   streetName: "Imizamo Yethu Street",
+//   streetNumber: 7689,
+//   suburb: "Hout Bay",
+//   city: "Cape Town",
+//   country: "South Africa"
+// };
+
+// console.log("First Name: " + firstName);
+// console.log("Last Name: " + lastName);
+// console.log("Age: " + age);
+// console.log("Subjects: " + subjects.join(", "));
+// console.log("Address: " + address.streetNumber + " " + address.streetName + ", " + address.suburb + ", " + address.city + ", " + address.country);
+
