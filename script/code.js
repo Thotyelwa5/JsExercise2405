@@ -47,3 +47,16 @@
 // console.log("Subjects: " + subjects.join(", "));
 // console.log("Address: " + address.streetNumber + " " + address.streetName + ", " + address.suburb + ", " + address.city + ", " + address.country);
 
+
+
+function displayResult() {
+    let number1 = document.getElementById("number1").value;
+    let operator = document.getElementById("operator").value;
+    let number2 = document.getElementById("number2").value;
+    
+    let result = "Number 1: " + number1 + "<br>Oparetor: " + operator + "<br>Number 2: " + number2;
+    document.getElementById("lblResult").innerHTML = result;
+  }
+
+  let btnResult = document.getElementById("btnResult");
+  btnResult.addEventListener("click", displayResult);
