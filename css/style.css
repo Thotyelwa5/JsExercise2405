@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: rgb(58, 124, 120);
+    padding: 50px;
+    
+  }
+
+  input {
+    margin-bottom: 15px;}
+    label{
+        color:#fff
+        
+    }
