@@ -49,14 +49,29 @@
 
 
 
-function displayResult() {
-    let number1 = document.getElementById("number1").value;
-    let operator = document.getElementById("operator").value;
-    let number2 = document.getElementById("number2").value;
-    
-    let result = "Number 1: " + number1 + "<br>Oparetor: " + operator + "<br>Number 2: " + number2;
-    document.getElementById("lblResult").innerHTML = result;
-  }
 
-  let btnResult = document.getElementById("btnResult");
-  btnResult.addEventListener("click", displayResult);
+function calculateResult() {
+    let number1 = parseFloat(document.querySelector("#number1").value) ;
+    let operator = document.querySelector("#operator").value;
+    let number2 = parseFloat(document.querySelector("#number2").value);
+  
+    let result = document.querySelector('#lblResult');
+  
+    if (operator === "+") {
+      result.innerText = number1 + number2;
+    } else if (operator === "-") {
+      result.innerText = number1 - number2;
+    } else if (operator === "*") {
+      result.innerText = number1 * number2;
+    } else if (operator === "/") {
+      result.innerText = number1 / number2;
+    } else {
+      result.innerText = "Invalid operator";
+    }
+  
+    
+    console.log(result); 
+  }
+  
+  let btnResult = document.querySelector("#btnResult");
+  btnResult.addEventListener("click", calculateResult);
