@@ -24,6 +24,7 @@
 //     console.log(fullName);
 //     return fullName;
 //   }
+
   
 //   // Call the function
 //   fullName();
@@ -83,6 +84,9 @@
 //   reversedSubject += subject[i];
 // }
 // console.log(reversedSubject);
+//other way of doing it
+//let subject = 'programming';
+//console.log(subject.split('').reverse().join(''));
 
 // Question5
 
