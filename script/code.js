@@ -48,30 +48,39 @@
 // console.log("Address: " + address.streetNumber + " " + address.streetName + ", " + address.suburb + ", " + address.city + ", " + address.country);
 
 
+// QUESTION3
 
-
-function calculateResult() {
-    let number1 = parseFloat(document.querySelector("#number1").value) ;
-    let operator = document.querySelector("#operator").value;
-    let number2 = parseFloat(document.querySelector("#number2").value);
+// function calculateResult() {
+//     let number1 = parseFloat(document.querySelector("#number1").value) ;
+//     let operator = document.querySelector("#operator").value;
+//     let number2 = parseFloat(document.querySelector("#number2").value);
   
-    let result = document.querySelector('#lblResult');
+//     let result = document.querySelector('#lblResult');
   
-    if (operator === "+") {
-      result.innerText = number1 + number2;
-    } else if (operator === "-") {
-      result.innerText = number1 - number2;
-    } else if (operator === "*") {
-      result.innerText = number1 * number2;
-    } else if (operator === "/") {
-      result.innerText = number1 / number2;
-    } else {
-      result.innerText = "Invalid operator";
-    }
+//     if (operator === "+") {
+//       result.innerText = number1 + number2;
+//     } else if (operator === "-") {
+//       result.innerText = number1 - number2;
+//     } else if (operator === "*") {
+//       result.innerText = number1 * number2;
+//     } else if (operator === "/") {
+//       result.innerText = number1 / number2;
+//     } else {
+//       result.innerText = "Invalid operator";
+//     }
   
     
-    console.log(result); 
-  }
+//     console.log(result); 
+//   }
   
-  let btnResult = document.querySelector("#btnResult");
-  btnResult.addEventListener("click", calculateResult);
+//   let btnResult = document.querySelector("#btnResult");
+//   btnResult.addEventListener("click", calculateResult);
+
+// QUESTION 4
+let subject = "programming";
+let reversedSubject = "";
+for (let i = subject.length - 1; i >= 0; i--) {
+  reversedSubject += subject[i];
+}
+console.log(reversedSubject);
+
