@@ -86,29 +86,62 @@
 
 // Question5
 
-let array = [
-  { name: 'Mish-AI',
-   dateOfBirth: '2020-05-31'
-   }];
+// let array = [
+//   { name: 'Mish-AI',
+//    dateOfBirth: '2020-05-31'
+//    }];
 
   
-  let today = new Date();
-  let mish = array[0]; 
-  let mishDob = new Date(mish.dateOfBirth);
+//   let today = new Date();
+//   let mish = array[0]; 
+//   let mishDob = new Date(mish.dateOfBirth);
   
-  let ageDiff = today.getFullYear() - mishDob.getFullYear();
-  let isBirthdayPassed = today.getMonth() > mishDob.getMonth() ||
-    (today.getMonth() === mishDob.getMonth() && today.getDate() >= mishDob.getDate());
-  let age = isBirthdayPassed ? ageDiff : ageDiff - 1;
+//   let ageDiff = today.getFullYear() - mishDob.getFullYear();
+//   let isBirthdayPassed = today.getMonth() > mishDob.getMonth() ||
+//     (today.getMonth() === mishDob.getMonth() && today.getDate() >= mishDob.getDate());
+//   let age = isBirthdayPassed ? ageDiff : ageDiff - 1;
   
   
-  let nextBirthday = new Date(today.getFullYear(), mishDob.getMonth(), mishDob.getDate());
-  if (today > nextBirthday) {
-    nextBirthday.setFullYear(nextBirthday.getFullYear() + 1);
-  }
-  let daysLeft = Math.floor((nextBirthday - today) / (1000 * 60 * 60 * 24));
+//   let nextBirthday = new Date(today.getFullYear(), mishDob.getMonth(), mishDob.getDate());
+//   if (today > nextBirthday) {
+//     nextBirthday.setFullYear(nextBirthday.getFullYear() + 1);
+//   }
+//   let daysLeft = Math.floor((nextBirthday - today) / (1000 * 60 * 60 * 24));
   
-  console.log(`Mish's age is ${age}, and there are ${daysLeft} days left until their birthday.`);
+//   console.log(`Mish's age is ${age}, and there are ${daysLeft} days left until their birthday.`);
+
+// QUESTION6
+
+let userMarks = parseInt(prompt('Please enter your marks')); 
+
+let message;
+
+switch (true) {
+  case userMarks === 100:
+    message = "You're amazing!";
+    break;
+  case userMarks >= 90 && userMarks <= 99:
+    message = "Well Done";
+    break;
+  case userMarks >= 80 && userMarks <= 89:
+    message = "Way to go";
+    break;
+  case userMarks >= 75 && userMarks <= 79:
+    message = "Keep it up";
+    break;
+  case userMarks >= 60 && userMarks <= 74:
+    message = "You did good";
+    break;
+  case userMarks >= 50 && userMarks <= 59:
+    message = "That was good";
+    break;
+  default:
+    message = "You failed";
+}
+
+
+console.log(message);
+
   
 
 
